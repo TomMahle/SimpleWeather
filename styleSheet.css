@@ -1,0 +1,100 @@
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	h1 {
+	}
+	
+	.searchbox{
+	}
+	
+	.focus{		
+		color:#000;
+	}
+	
+	.blur{
+		color:#888;
+	}
+	
+	.center{
+		text-align: center;
+	}
+
+	.temp{
+		font-size: 50px;
+	}
+
+	.description{
+	}
+
+	.minmax{
+	}
+
+	.day{
+		font-weight: bold;
+	}
+
+
+	.date{
+	}
+
+	.weatherDay{
+		background-color: #99CCFF;
+		width: 160px;
+		margin-left: auto;
+		margin-right: auto;
+		border: 2px solid #a1a1a1;
+		padding: 10px 40px; 
+		border-radius: 25px;
+	}
+
+	.control{
+		background-color: #efefef; 
+		width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 10px 40px; 
+		border: 2px solid #a1a1a1;
+		border-radius: 25px;
+	}
+
+	#map_canvas{
+		float: right; 
+		width: 200px; 
+		height: 200px;
+	}
+
+	.geo{
+		font-size: 1.5em; 
+		background-color: #efefef; 
+		padding: 15px;
+		display: block;
+	}
+	
+	.Snow{
+		background-color: #FFFFFF;
+	}
+
+	.Clouds{
+		background-color: #B2B2B2;
+
+	}
+
+	.Rain{
+		background-color: #7A7A7A;
+		color: #FFFFFF;
+	}
+
+	.Extreme{
+		background-color: #000000;
+		color: #FFFF00;
+	}
+	
+	.inactive{
+		display: none;
+	}
+	
+	.favorites{
+		width: 300px; 
+	}

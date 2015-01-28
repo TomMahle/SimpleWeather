@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Simple Weather</title>
+		<!--Google Maps is used for debugging location-->
+		<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+		<!--jQuery is too nice to pass up-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
+		<!--chosen will allow our favorites list to look cool-->
+		<script src="chosen.jquery.min.js"></script>		
+		<link rel = "stylesheet" type = "text/css" href ="./chosen.min.css"/>
+		<link rel = "stylesheet" type = "text/css" href ="./styleSheet.css"/>	
+		<link rel = "icon" href="favicon.ico"/>
+		<!--Where the app's logic lives-->
+		<script src="SimpleWeather.js"></script>	
+	</head>
+
+
+	<body>
+		<!--Updates to 'Weather in ____' header-->
+		<h1 id="h01" class="center">Share your location for weather here and now!</h1> 
+		<p id="urlDiv" class="inactive center"><p>
+		<div class="center control">
+			<div id="searchForm">
+				<input type="search" id="citySearch" namestyle="color:#888;" 
+				value="Search By City Name!" class="searchBox" tabindex="1"/>
+				<input id="goButton" type = "submit" class="refresher" value="Go!"/>
+				<input id="settingsButton" type = "submit" value="..."/>				
+			</div>
+			<div id = "settingsTab">
+					<input type="radio" id="degF" name = "tempUnit" class="refresher" checked>°F  
+					<input type="radio" id="degC" name = "tempUnit" class="refresher">°C
+				<div>
+					<input type="radio" id="forecast0" name = "forecast" checked>Current Weather 
+					<input type="radio" id="forecast5" name = "forecast">Five Day Forecast
+					<input type="radio" id="forecast14" name = "forecast">Two Week Forecast
+				</div>
+				<div id ="favoritesDiv">
+					<select id="savedFavorites" data-placeholder="Select a Saved City" class="chosen-select favorites" tabindex="2">
+					</select>	
+				</div>
+				<div>
+					<input id="addFavorite" type = "submit" class="favoritesAddRemove" value="+"/>
+					<input id="removeFavorite" type = "submit" class="favoritesAddRemove" value="-"/>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="weatherData"></div>
+		<br>
+		<br>
+		<br>
+		<div id="georesults" class="inactive geo"></div>
+	</body>
+</html>
